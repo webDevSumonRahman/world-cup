@@ -1,0 +1,161 @@
+/*-------
+   font 
+ -------*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+ /*-------------------------
+  common style and utilities 
+  -------------------------*/
+  body {
+    font-family: 'Poppins', sans-serif; 
+  }  
+  .container {
+    width:1321px;
+    margin-top: 20px; 
+  }
+  header, main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  }
+
+  /*------------------ 
+    top banner style
+   ------------------*/
+  
+  .top-banner{
+      display: flex;
+      align-items:center;
+      background-color:black;    
+      border-radius: 20px;
+     
+   }
+    .banner-heading{
+      color: white;
+      margin-left: 20px;
+    }
+    .heading-text{
+      font-size: 70px;
+    }
+    .banner-heading p{
+      width: 531px;
+    }
+    .witch-live-button{
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      background-color: red;
+      border-radius: 5px;
+      padding:15px 35px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    .top-banner img{
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+
+    /*------------------------------
+     side menu and live section style
+     ------------------------------ */
+     .side-menu{
+     
+      width: 312px;
+      height:312px;
+      background-color: black;
+      border-radius: 10px;
+      position: relative;
+     }
+     .side-menu-button{      
+      display:inline-block;
+      text-decoration: none;
+      background-color: white;
+      position: absolute;
+      left: 15%;
+      width:230px ;
+      padding: 15px 0;
+      text-align: center;
+      border-radius: 5px;
+      
+     }
+     .upcoming-match,.button{
+      
+      top: 30px;
+      
+      
+     }
+     .all-group{
+      
+      top: 120px;
+      
+     }
+     .bloge{
+      top: 200px;
+      color: white;
+      background-color: red;
+     }
+
+     /*------------------
+      live sessions style 
+      -------------------*/
+     .side-menu-and-live-sessions {
+     display: flex;
+     margin-bottom: 200px;
+      
+     }
+     .live-sessions{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-row-gap:15px;
+     }
+     .session{
+      margin-left: 20px;
+      width: 312px;
+      height:362px;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+     }
+     .session img{
+      width: 100%;      
+     }
+     .session p{
+      margin-left: 20px;
+     }
+     .live-button{
+      margin-bottom: 20px;
+      margin-left: 15px;
+      padding: 3px 30px;
+     }
+     .duration{
+      margin-top: 30px;
+     }
+     .fa-clock.houre{
+      margin-left: 20px;      
+
+     }
+     .fa-comment-dots.massage{
+      margin-left: 20px;
+     }
+     footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: black;
+      color: dimgray;
+     height: 500px;
+     }
+     .footer-section{
+      margin-top: 50px;
+     }
+     .footer-text{
+     margin-left: 50%;
+     }
+     .setting{
+      display: flex;
+      justify-content: space-around;
+     }
+     .footer-heading hr{
+      color: dimgray;
+      width: 80%;
+     }
