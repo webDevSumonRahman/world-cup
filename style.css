@@ -48,7 +48,7 @@
       border-radius: 5px;
       padding:15px 35px;
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .top-banner img{
       width: 100%;
@@ -60,41 +60,36 @@
      side menu and live section style
      ------------------------------ */
      .side-menu{
-     
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
       width: 312px;
       height:312px;
+      margin-bottom: 20px;
       background-color: black;
       border-radius: 10px;
-      position: relative;
+      
      }
-     .side-menu-button{      
-      display:inline-block;
+     
+     .side-menu-button{     
       text-decoration: none;
-      background-color: white;
-      position: absolute;
-      left: 15%;
+      color: black;
+      background-color: lightgray;      
       width:230px ;
       padding: 15px 0;
       text-align: center;
       border-radius: 5px;
       
      }
-     .upcoming-match,.button{
+     .upcoming-match{
       
       top: 30px;
       color: white;
       background-color: red;
       
      }
-     .all-group{
-      
-      top: 120px;
-      
-     }
-     .bloge{
-      top: 200px;
-      
-     }
+     
 
      /*------------------
       live sessions style 
@@ -104,6 +99,7 @@
      margin-bottom: 200px;
       
      }
+     
      .live-sessions ,.upcomimg-match{
       display: grid;
       grid-template-columns: repeat(3,1fr);
@@ -204,3 +200,28 @@
       }
 
      }
+     /* tablet devices */
+     @media only screen and (min-width:688px) and (max-width:992px) {
+      .container{
+        width: 100%;
+      }
+      
+      .side-menu-and-live-sessions{
+        flex-direction:column ;
+      }
+      .side-menu{
+        flex-direction: row;
+        width:100%;
+        height: 100%;
+        background-color: white;
+       
+      }
+      .witch-live-button{
+        padding: 5px 20px;
+      }
+      .live-sessions, .upcomimg-match {
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 10px;
+      }
+     }
+
