@@ -147,7 +147,7 @@
       justify-content: center;
       background-color: black;
       color: dimgray;
-     height: 500px;
+     height: 600px;
      }
      .footer-section{
       margin-top: 50px;
@@ -181,3 +181,26 @@
       align-items: center;
      }
      
+     /* media queries */
+     
+     /* MObile Devices */
+     @media only screen and (max-width:688px) {
+      .container{
+        width: 100%;
+      }
+      .top-banner, .side-menu-and-live-sessions {
+        flex-direction: column;
+        align-items: center;
+       
+      }
+      .live-sessions, .upcomimg-match {
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 10px;
+      }
+      .setting{
+        flex-direction: column;
+        align-items: center;
+       
+      }
+
+     }
