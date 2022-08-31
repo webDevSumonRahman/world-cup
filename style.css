@@ -82,7 +82,8 @@
      .upcoming-match,.button{
       
       top: 30px;
-      
+      color: white;
+      background-color: red;
       
      }
      .all-group{
@@ -92,8 +93,7 @@
      }
      .bloge{
       top: 200px;
-      color: white;
-      background-color: red;
+      
      }
 
      /*------------------
@@ -104,7 +104,7 @@
      margin-bottom: 200px;
       
      }
-     .live-sessions{
+     .live-sessions ,.upcomimg-match{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       grid-row-gap:15px;
@@ -137,6 +137,10 @@
      .fa-comment-dots.massage{
       margin-left: 20px;
      }
+
+     /*----------------
+        footer style 
+      ----------------*/
      footer{
       display: flex;
       flex-direction: column;
@@ -149,7 +153,8 @@
       margin-top: 50px;
      }
      .footer-text{
-     margin-left: 50%;
+      margin-left: 45%;
+      font-size: 70px;
      }
      .setting{
       display: flex;
@@ -157,5 +162,22 @@
      }
      .footer-heading hr{
       color: dimgray;
-      width: 80%;
+      width:95%;
      }
+
+     .match-flag{
+      display: flex;
+     }
+     .match-flag img{
+      width: 93px;
+      height:56px;
+     }
+     .match{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 312px;
+      height: 242px;
+      align-items: center;
+     }
+     
